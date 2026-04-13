@@ -1,0 +1,20 @@
+# .codex/config.toml
+
+model = "gpt-5.3-codex"
+sandbox_mode = "workspace-write"
+
+[history]
+persistence = "save-all"
+
+[tools]
+web_search = "cached"
+
+[ui]
+hide_agent_reasoning = true
+
+# Use approvals conservatively for a codebase like this.
+# For interactive use, on-request is the safest practical default.
+approval_policy = "on-request"
+
+[project]
+name = "databento-options-v0-v1_5"
